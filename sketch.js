@@ -28,12 +28,13 @@ function setup() {
 	groundSprite.shapeColor=color(255)
 
 var packageBody_options={
-	restitution=0.8
+	restitution:0.8,
+	isStatic:true
 }
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {packageBody_options, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , packageBody_options);
 	World.add(world, packageBody);
 	
 
