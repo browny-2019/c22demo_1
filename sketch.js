@@ -28,7 +28,7 @@ function setup() {
 	groundSprite.shapeColor=color(255)
 
 var packageBody_options={
-	restitution=0.8,
+	restitution=0.8
 }
 	engine = Engine.create();
 	world = engine.world;
